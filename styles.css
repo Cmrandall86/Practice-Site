@@ -1,5 +1,5 @@
-p {
-    color: blue;
+* {
+    background-color: turquoise;
 }
 
 h1 {
@@ -9,3 +9,67 @@ h1 {
 .newHeader {
     color: red;
 }
+
+#sitesList {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20pt;
+}
+
+ /* this isnt working */
+a:link {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active{
+    font-size: 30pt;
+}
+
+hr {
+    border: 2px solid red;
+    border-radius: 40px;
+}
+
+.form {
+    border: 3px solid lightblue;
+    padding: 10px;
+    background: aquamarine;
+  }
+
+  .todo-item {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .todos {
+    padding: 20px;
+    margin-top: 20px;
+    background: aquamarine;
+  }
+
+  label {
+    background-color: turquoise;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+  }
+
+  .todo-item.completed {
+    background: green;
+    border-width: 2px;
+  }
+  
+  .todo-item.completed .complete-button {
+    display: none;
+  }
+  

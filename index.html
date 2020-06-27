@@ -2,18 +2,35 @@
 <html lang="en">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Randall Practice Site</title>
 </head>
 <body>
     <div class='header' id='headerOne'>
-        <h1 id='colorChangingHeader'>Font import testing</h1>
-        <button class='headerButton' id='button1'>Click here to change header color</button>
+        <h1 id='colorChangingHeader' >Font import testing</h1>
+        <button class='headerButton' id='button1' title='This Button Changes The Header Color'>Click here to change header color</button>
     </div>
-    <div class='content' id='firstParagraph'>
-        <p>hello there practice</p>                
+    <br>
+    <hr>
+    <div id='learningSites'>
+        <h1>These are sites I use to learn</h1>
+        <ul id='sitesList'>
+            <li><a href="https://www.w3schools.com/html/html_basic.asp">w3Schools Html info</a></li>
+            <li><a href="https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=Brand-Udemy_la.EN_cc.US&utm_term=_._ag_78616515599_._ad_389436697904_._de_c_._dm__._pl__._ti_kwd-310556426868_._li_9030456_._pd__._&utm_term=_._pd__._kw_udemy_._&matchtype=e&gclid=Cj0KCQjwudb3BRC9ARIsAEa-vUtesihZU7yixPvNNq7e9cFT35JPW7GKmZxVFO3TwQoYB26GSbn-4UkaAgRZEALw_wcB">Udemy Dashboard</a></li>
+        </ul>       
+    </div>
+    <hr>
+    <br>
+    <div id='formApp'>
+        <form id="todoForm" class="form">
+            <label>Todo Item</label>
+            <input type="text" name="description" id="todo-description">
+            <button>Add Todo</button>
+        </form>
+        <div class="todos" id="todoList"></div> <!--This is where the todos are appended with JS-->
     </div>
     
     <script src="app.js"></script>
