@@ -9,30 +9,49 @@
     <title>Randall Practice Site</title>
 </head>
 <body>
+    <!--#region Color Changing Header-->
     <div class='header' id='headerOne'>
         <h1 id='colorChangingHeader' >Font import testing</h1>
         <button class='headerButton' id='button1' title='This Button Changes The Header Color'>Click here to change header color</button>
     </div>
     <br>
     <hr>
+    <!--#endregion-->
+    <!--#region Site list-->
+    
     <div id='learningSites'>
-        <h1>These are sites I use to learn</h1>
+        <h1>Frequently Used Websites</h1>
         <ul id='sitesList'>
             <li><a href="https://www.w3schools.com/html/html_basic.asp">w3Schools Html info</a></li>
             <li><a href="https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=Brand-Udemy_la.EN_cc.US&utm_term=_._ag_78616515599_._ad_389436697904_._de_c_._dm__._pl__._ti_kwd-310556426868_._li_9030456_._pd__._&utm_term=_._pd__._kw_udemy_._&matchtype=e&gclid=Cj0KCQjwudb3BRC9ARIsAEa-vUtesihZU7yixPvNNq7e9cFT35JPW7GKmZxVFO3TwQoYB26GSbn-4UkaAgRZEALw_wcB">Udemy Dashboard</a></li>
+            <li><a href="https://www.twitch.tv/">Twitch</a></li>
+            <li><a href="https://www.reddit.com/r/coronavirusnewmexico/">Reddit Corona Virus Info</a></li>
         </ul>       
     </div>
     <hr>
     <br>
+    <!--#endregion-->
+    <!--#region Todo List-->
     <div id='formApp'>
         <form id="todoForm" class="form">
             <label>Todo Item</label>
             <input type="text" name="description" id="todo-description">
             <button>Add Todo</button>
+            <div class="todos" id="todoList"></div> <!--This is where the todos are appended with JS-->
         </form>
-        <div class="todos" id="todoList"></div> <!--This is where the todos are appended with JS-->
     </div>
+        <!--#endregion-->
     
+    <div class="container">
+        <div class="card">
+            <h4>This is a card!</h4>
+            <div class="calculator">
+                <form class="calculatorForm">
+                    <p class ="calcLabel">This is some stuff that i will eventually be changing with something else</p>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

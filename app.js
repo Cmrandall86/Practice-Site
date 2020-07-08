@@ -1,4 +1,4 @@
-
+//#region Color Chaning Header
 const button = document.querySelector('#button1');
 
 const header = document.querySelector('#colorChangingHeader');
@@ -9,8 +9,9 @@ function handleHeaderButton(event) {
     header.classList.toggle('newHeader');
 
 }
+//#endregion
 
-
+//#region Todo List
 // create a todo
 
 // select the todo form
@@ -22,6 +23,7 @@ function renderTodoMarkup(name) {
       <span class="todo-text">${name}</span>
       <button class="complete-button">Complete</button>
       <button class="remove-button">Remove</button>
+      <button class="edit-button">Edit</button>
   `;
 }
 
@@ -39,6 +41,20 @@ function bindTodoEventListeners(todo) {
 
   const completeButton = todo.querySelector(".complete-button");
   completeButton.addEventListener("click", completeTodo);
+
+  
+  //need help with this
+  function editTodo(){
+    const inputBox = document.querySelector('#todo-description');
+    const todoNameInput = form.elements[0];
+    const todoName = todoNameInput.value;
+    inputBox.textContent = todoName;
+    todo.remove();
+  }
+  
+  const editButton = todo.querySelector(".edit-button");
+  editButton.addEventListener("click", editTodo)
+
 }
 
 function createTodo(name) {
@@ -47,18 +63,7 @@ function createTodo(name) {
 
   newTodo.innerHTML = renderTodoMarkup(name);
   bindTodoEventListeners(newTodo);
-  // const newTodo = document.createElement("div");
-  // const todoText = document.createTextNode(name);
-  // const removeButton = document.createElement("button");
-  // const buttonText = document.createTextNode("remove");
-
-  // removeButton.appendChild(buttonText);
-  // // give it the appropriate class name
-  // newTodo.classList.add("todo-item");
-  // put this todoname value in it
-  // newTodo.appendChild(todoText);
-  // newTodo.appendChild(removeButton);
-
+  
   return newTodo;
 }
 
@@ -83,3 +88,5 @@ function handleFormSubmit(event) {
 }
 
 form.addEventListener("submit", handleFormSubmit);
+
+//#endregion
