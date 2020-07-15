@@ -12,6 +12,7 @@ function handleHeaderButton(event) {
 //#endregion
 
 //#region Todo List
+
 // create a todo
 
 // select the todo form
@@ -90,3 +91,37 @@ function handleFormSubmit(event) {
 form.addEventListener("submit", handleFormSubmit);
 
 //#endregion
+
+
+//const balance = prompt('how much money do you have?')
+
+
+const calculatorForm = document.querySelector('.calculatorForm');
+const balanceList = document.querySelector('.balanceList');
+
+function showBalance(total) {
+  const newBalance = document.createElement('div');
+  newBalance.id = 'balance';
+  newBalance.innerHTML = renderBalance(total);
+
+  return newBalance;
+
+};
+
+function renderBalance(total) {
+  return`
+   <span class='renderedBalance'> ${total} </span>
+   `
+};
+
+function handleBalanceSubmit(event) {
+  event.preventDefault();
+  const balanceInput = calculatorForm.elements[0];
+  const balance = balanceInput.value;
+
+  newBalance = showBalance(balance);
+  balanceList.appendChild(newBalance);
+
+};
+
+calculatorForm.addEventListener('submit', handleBalanceSubmit);

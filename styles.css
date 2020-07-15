@@ -44,7 +44,7 @@ a:hover {
 }
 
 a:active{
-    font-size: 30pt;
+
 }
 
 /*#endregion*/
@@ -132,5 +132,25 @@ a:active{
   text-align: center;
 }
 
+#balanceInput {
+width: 292px;
+height: 30px;
+  
+}
+
+#balance {
+  background-color: blue;
+  display: block;
+  height: 30px;
+
+}
+
+#balance, .renderedBalance {
+  margin: 10px;
+  border: solid white;
+  padding: 2px;
+  border-radius: 10px;
+
+}
 /* #endregion */
 
